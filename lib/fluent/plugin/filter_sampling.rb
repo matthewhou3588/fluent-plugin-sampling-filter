@@ -3,7 +3,7 @@ require 'fluent/clock'
 
 class Fluent::Plugin::SamplingFilter < Fluent::Plugin::Filter
   Fluent::Plugin.register_filter('sampling', self)
-  Fluent::Plugin.register_filter('sampling_filter', self)
+  #Fluent::Plugin.register_filter('sampling_filter', self)
 
   config_param :interval, :integer
   config_param :sample_unit, :enum, list: [:tag, :all], default: :tag
